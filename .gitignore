@@ -1,0 +1,13 @@
+.DS_Store
+node_modules
+npm-debug.log
+bower_components
+dist
+*.swp
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea/
+out
+gen

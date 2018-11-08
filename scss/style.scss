@@ -14,6 +14,7 @@ $theme-color: green;
 .header{
   background: url(../img/bgLanding.png), linear-gradient(#fff, #fff);
   min-height: 100vh;
+  background-size: cover;
 }
 
 
@@ -407,8 +408,22 @@ a {
   height: 100px;
 }
 
+.footer{
+  min-height: fit-content;
+  background: #292929;
+  padding: 50px 30px 30px;
+}
+.footer img{
+  height: 40px;
+}
 
+.footer .links{
+  margin-top: 50px;
+}
 
+.links>a{
+  line-height: 30px;
+}
 
 @media (max-width: 47.999em) {
 
