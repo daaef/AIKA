@@ -8558,6 +8558,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100px;
 }
 
 @media (max-width: 768px) {
@@ -8977,7 +8978,7 @@ a {
   padding: 50px 30px 30px;
 }
 
-.footer {
+.commuter-footer {
   background: transparent;
   padding: 50px 30px 30px;
 }
@@ -9033,6 +9034,11 @@ a {
   min-height: calc(100vh - (100px));
 }
 
+@media (max-width: 959px) {
+  .commuter-footer {
+    position: relative;
+  }
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
     color: blue;

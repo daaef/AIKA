@@ -77,7 +77,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-} @media(max-width: 768px) {
+  height: 100px;
+}
+
+@media(max-width: 768px) {
   .nav-wrapper {
     width: 90%;
   }
@@ -423,7 +426,7 @@ a {
   padding: 50px 30px 30px;
 }
 
-.footer{
+.commuter-footer{
   background: transparent;
   padding: 50px 30px 30px;
 }
@@ -485,6 +488,12 @@ a {
 
 .form-container{
   min-height: calc(100vh - (100px));
+}
+
+@media (max-width: 959px) {
+  .commuter-footer{
+    position: relative;
+  }
 }
 
 @media only screen 
