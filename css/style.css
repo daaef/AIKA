@@ -8555,6 +8555,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -8660,11 +8663,20 @@ a {
   -webkit-transition: all 0.5s ease;
 }
 
+#navbar li a {
+  color: white;
+}
+
 #navbar li a:hover {
   /* border-bottom: 1px solid rgb(28, 121, 184); */
   color: #1c79b8;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
+}
+
+.commuter-header #navbar li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: #a8a8a8;
 }
 
 /* Animated Bottom Line */
@@ -8965,6 +8977,11 @@ a {
   padding: 50px 30px 30px;
 }
 
+.footer {
+  background: transparent;
+  padding: 50px 30px 30px;
+}
+
 .footer img {
   height: 40px;
 }
@@ -8986,6 +9003,36 @@ a {
     display: block;
   }
 }
+.commuter-header {
+  min-height: 100vh;
+  background: url(../img/commuter-BG.png);
+  background-position: bottom left;
+}
+
+.commuter-header .uk-sticky.uk-sticky-fixed.uk-sticky-below, .commuter-header .uk-sticky {
+  background: #3387d9 !important;
+  height: 100px;
+}
+
+.uk-flex > .uk-input, .uk-flex > .uk-select, .uk-flex > .uk-textarea {
+  width: auto !important;
+}
+
+.uk-select, .uk-select:focus, #city, #city:focus {
+  background: #cdcdcd;
+}
+
+.commuter-footer {
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.form-container {
+  min-height: calc(100vh - (100px));
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
     color: blue;

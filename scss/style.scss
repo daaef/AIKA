@@ -76,6 +76,7 @@ a {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 } @media(max-width: 768px) {
   .nav-wrapper {
     width: 90%;
@@ -174,12 +175,20 @@ a {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
+#navbar li a {
+  color: rgb(255, 255, 255);
+}
 
 #navbar li a:hover {
   /* border-bottom: 1px solid rgb(28, 121, 184); */
   color: rgb(28, 121, 184);
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
+}
+
+.commuter-header #navbar li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: rgb(168, 168, 168);
 }
 
 /* Animated Bottom Line */
@@ -413,6 +422,12 @@ a {
   background: #292929;
   padding: 50px 30px 30px;
 }
+
+.footer{
+  background: transparent;
+  padding: 50px 30px 30px;
+}
+
 .footer img{
   height: 40px;
 }
@@ -436,6 +451,42 @@ a {
   }
 
 }
+
+.commuter-header{
+  min-height: 100vh;
+  background: url(../img/commuter-BG.png);
+  background-position: bottom left;
+}
+
+.commuter-header .uk-sticky.uk-sticky-fixed.uk-sticky-below, .commuter-header .uk-sticky{
+  background: #3387d9!important;
+  height: 100px;
+}
+
+.form-fill{
+  //min-height: calc(100vh - (100px));
+}
+
+.uk-flex>.uk-input, .uk-flex>.uk-select, .uk-flex>.uk-textarea{
+  width: auto!important;
+}
+
+.uk-select, .uk-select:focus, #city, #city:focus{
+  background: #cdcdcd;
+}
+
+
+.commuter-footer{
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.form-container{
+  min-height: calc(100vh - (100px));
+}
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
