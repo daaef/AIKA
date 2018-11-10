@@ -8664,7 +8664,7 @@ a {
   -webkit-transition: all 0.5s ease;
 }
 
-#navbar li a {
+.commuter-header #navbar li a {
   color: white;
 }
 
